@@ -108,3 +108,113 @@
 [info] i  hosting: Serving hosting files from: public
 [info] ✔  hosting: Local server: http://localhost:5004
 
+[debug] [2018-03-28T10:11:35.015Z] ----------------------------------------------------------------------
+[debug] [2018-03-28T10:11:35.019Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2018-03-28T10:11:35.020Z] CLI Version:   3.17.7
+[debug] [2018-03-28T10:11:35.020Z] Platform:      linux
+[debug] [2018-03-28T10:11:35.020Z] Node Version:  v8.10.0
+[debug] [2018-03-28T10:11:35.020Z] Time:          Wed Mar 28 2018 07:11:35 GMT-0300 (-03)
+[debug] [2018-03-28T10:11:35.020Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-28T10:11:35.128Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-28T10:11:35.128Z] > authorizing via signed-in user
+[debug] [2018-03-28T10:11:35.132Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-28T10:11:35.132Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/vmTel0T9k6_9GwJIiH89E0A_ocPGT2Cd1KRqflEemM8',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Mar 28 2018 07:11:35 GMT-0300 (-03)
+[debug] [2018-03-28T10:11:35.822Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-28T10:11:35.874Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/poly-fire-edf78  
+  
+ Wed Mar 28 2018 07:11:35 GMT-0300 (-03)
+[debug] [2018-03-28T10:11:37.121Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-28T10:11:37.123Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/poly-fire-edf78/tokens  
+  
+ Wed Mar 28 2018 07:11:37 GMT-0300 (-03)
+[debug] [2018-03-28T10:11:37.946Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-28T10:11:37.949Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/poly-fire-edf78  
+  
+ Wed Mar 28 2018 07:11:37 GMT-0300 (-03)
+[debug] [2018-03-28T10:11:39.030Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/valeria/Área de Trabalho/Polymer/fire-demo'...
+[info] 
+[debug] [2018-03-28T10:11:39.034Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/240401313350/clients/_:getWebAppConfig  
+  
+ Wed Mar 28 2018 07:11:39 GMT-0300 (-03)
+[debug] [2018-03-28T10:11:40.733Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+
+[debug] [2018-03-28T10:22:27.126Z] ----------------------------------------------------------------------
+[debug] [2018-03-28T10:22:27.131Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2018-03-28T10:22:27.132Z] CLI Version:   3.17.7
+[debug] [2018-03-28T10:22:27.132Z] Platform:      linux
+[debug] [2018-03-28T10:22:27.132Z] Node Version:  v8.10.0
+[debug] [2018-03-28T10:22:27.132Z] Time:          Wed Mar 28 2018 07:22:27 GMT-0300 (-03)
+[debug] [2018-03-28T10:22:27.132Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-28T10:22:27.217Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-28T10:22:27.217Z] > authorizing via signed-in user
+[debug] [2018-03-28T10:22:27.221Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/poly-fire-edf78  
+  
+ Wed Mar 28 2018 07:22:27 GMT-0300 (-03)
+[debug] [2018-03-28T10:22:28.576Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-28T10:22:28.578Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/poly-fire-edf78/tokens  
+  
+ Wed Mar 28 2018 07:22:28 GMT-0300 (-03)
+[debug] [2018-03-28T10:22:35.397Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-28T10:22:35.610Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/poly-fire-edf78  
+  
+ Wed Mar 28 2018 07:22:35 GMT-0300 (-03)
+[debug] [2018-03-28T10:22:37.257Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/valeria/Área de Trabalho/Polymer/fire-demo'...
+[info] 
+[debug] [2018-03-28T10:22:37.265Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/240401313350/clients/_:getWebAppConfig  
+  
+ Wed Mar 28 2018 07:22:37 GMT-0300 (-03)
+[debug] [2018-03-28T10:22:38.798Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5000 is not available. Trying another port...
+[debug] [2018-03-28T10:22:39.211Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/240401313350/clients/_:getWebAppConfig  
+  
+ Wed Mar 28 2018 07:22:39 GMT-0300 (-03)
+[debug] [2018-03-28T10:22:40.778Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5004
+
+[debug] [2018-03-28T10:51:27.020Z] ----------------------------------------------------------------------
+[debug] [2018-03-28T10:51:27.027Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2018-03-28T10:51:27.028Z] CLI Version:   3.17.7
+[debug] [2018-03-28T10:51:27.028Z] Platform:      linux
+[debug] [2018-03-28T10:51:27.028Z] Node Version:  v8.10.0
+[debug] [2018-03-28T10:51:27.028Z] Time:          Wed Mar 28 2018 07:51:27 GMT-0300 (-03)
+[debug] [2018-03-28T10:51:27.030Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-28T10:51:27.132Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-28T10:51:27.132Z] > authorizing via signed-in user
+[debug] [2018-03-28T10:51:27.136Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/poly-fire-edf78  
+  
+ Wed Mar 28 2018 07:51:27 GMT-0300 (-03)
+[debug] [2018-03-28T10:51:28.472Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-28T10:51:28.475Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/poly-fire-edf78/tokens  
+  
+ Wed Mar 28 2018 07:51:28 GMT-0300 (-03)
+[debug] [2018-03-28T10:51:36.163Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-28T10:51:36.165Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/poly-fire-edf78  
+  
+ Wed Mar 28 2018 07:51:36 GMT-0300 (-03)
+[debug] [2018-03-28T10:51:37.275Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/valeria/Área de Trabalho/Polymer/fire-demo'...
+[info] 
+[debug] [2018-03-28T10:51:37.279Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/240401313350/clients/_:getWebAppConfig  
+  
+ Wed Mar 28 2018 07:51:37 GMT-0300 (-03)
+[debug] [2018-03-28T10:51:38.847Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+

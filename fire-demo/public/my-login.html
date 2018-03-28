@@ -6,27 +6,31 @@
 		<firebase-auth 
 			id="auth" 
 			user="{{user}}" 
-			atatus-known="{{statusKnown}}"
 			provider="google" 
 			on-error="handleError">
 		</firebase-auth>
 
 		<template is="dom-if" if="[[user]]">
-			<h1>Bem vindo(a) [[user.displayName]]</h1>
+			<style>
+				h1 {
+					font-family: sans-serif;
+					color: #404040;
+				}
+			</style>
+			<h1>Anotações [[user.displayName]]</h1>
 		</template>
 
 		<paper-button raised on-tap="login" hidden$="[[user]]">Sign in</paper-button>		
-		<paper-button raised on-tap="logout" hidden$="[[!user]]">Sign out</paper-button>		
+		<paper-button raised on-tap="logout" hidden$="[[!user]]">Sign out</paper-button>
+
 	</template>
+
 
 	<script>
 		Polymer({
 			is: 'my-login',
 			properties: {
 				user: {
-					type: Object
-				},
-				statusKnown: {
 					type: Object
 				}
 			},
