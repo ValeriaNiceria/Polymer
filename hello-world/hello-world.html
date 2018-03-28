@@ -1,0 +1,24 @@
+<!-- Importando o polymer -->
+<link rel="import" href="bower_components/polymer/polymer.html">
+
+<!-- Criando o DOM local (shadow dom)-->
+<dom-module id="hello-world">
+
+	<template>
+		<!-- Adicionando estilo ao elemento -->
+		<style>
+			h1 {
+				color: #900;
+			}
+		</style>
+
+		<h1>Hello World!</h1>
+	</template>
+
+	<!-- Registrando o elemento -->
+	<script>
+		Polymer({
+			is: 'hello-world'
+		});
+	</script>
+</dom-module>
