@@ -4,16 +4,31 @@
 
 <dom-module id="my-app">
 	<template>
+		<style>
+			:host {
+				display: block;
+				font-family: Roboto, sans-serif;
+				max-width: 640px;
+				margin: 0 auto;
+			}
+		</style>
+
 		<firebase-app 
 			id="firebase"
 	  		auth-domain="poly-fire-edf78.firebaseapp.com"
 	  		database-url="https://poly-fire-edf78.firebaseio.com/"
-	  		api-key="AIzaSyCUtORBQYFDjVJD6VTLuFcBYLH_68GTOMQ">
+	  		api-key="AIzaSyCUtORBQYFDjVJD6VTLuFcBYLH_68GTOMQ"
+	  		messaging-sender-id="301171509059">
 		</firebase-app>
 
-		<my-login></my-login>
+		<header>
+			<my-login></my-login>
+		</header>
+		
+		<main>
+			<my-notes></my-notes>
+		</main>
 
-		<my-notes></my-notes>
 	</template>
 
 	<script>

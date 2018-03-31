@@ -60,11 +60,12 @@
 					</template>					
 				</ul>
 
-
-				<paper-input id="input" label="Escreva uma anotação..."></paper-input>
-				<div id="notes-controls">
-					<paper-button id="add" on-tap="add">Adicionar</paper-button>
-				</div>
+				<template is="dom-if" if="[[user]]">
+					<paper-input id="input" label="Escreva uma anotação..."></paper-input>
+					<div id="notes-controls">
+						<paper-button id="add" on-tap="add">Adicionar</paper-button>
+					</div>
+				</template>
 			</div>
 		</div>
 	</template>
