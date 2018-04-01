@@ -1,0 +1,98 @@
+[debug] [2018-04-01T16:07:00.279Z] ----------------------------------------------------------------------
+[debug] [2018-04-01T16:07:00.283Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2018-04-01T16:07:00.284Z] CLI Version:   3.17.7
+[debug] [2018-04-01T16:07:00.284Z] Platform:      linux
+[debug] [2018-04-01T16:07:00.284Z] Node Version:  v8.10.0
+[debug] [2018-04-01T16:07:00.284Z] Time:          Sun Apr 01 2018 13:07:00 GMT-0300 (-03)
+[debug] [2018-04-01T16:07:00.284Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-04-01T16:07:00.331Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-01T16:07:00.331Z] > authorizing via signed-in user
+[debug] [2018-04-01T16:07:00.336Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/note-app-5896a  
+  
+ Sun Apr 01 2018 13:07:00 GMT-0300 (-03)
+[debug] [2018-04-01T16:07:06.758Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-01T16:07:06.760Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/note-app-5896a/tokens  
+  
+ Sun Apr 01 2018 13:07:06 GMT-0300 (-03)
+[debug] [2018-04-01T16:07:07.550Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-01T16:07:07.552Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/note-app-5896a  
+  
+ Sun Apr 01 2018 13:07:07 GMT-0300 (-03)
+[debug] [2018-04-01T16:07:08.579Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/valeria/Área de Trabalho/Polymer/note-app-codelabs'...
+[info] 
+[debug] [2018-04-01T16:07:08.583Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1058979701174/clients/_:getWebAppConfig  
+  
+ Sun Apr 01 2018 13:07:08 GMT-0300 (-03)
+[debug] [2018-04-01T16:07:10.019Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5000 is not available. Trying another port...
+[debug] [2018-04-01T16:07:10.157Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1058979701174/clients/_:getWebAppConfig  
+  
+ Sun Apr 01 2018 13:07:10 GMT-0300 (-03)
+[debug] [2018-04-01T16:07:10.710Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5004
+
+[debug] [2018-04-01T16:09:42.984Z] Error: connect ETIMEDOUT 92.242.140.20:443
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-04-01T16:09:42.990Z] Error: socket hang up
+    at createHangUpError (_http_client.js:331:15)
+    at TLSSocket.socketCloseListener (_http_client.js:363:23)
+    at emitOne (events.js:121:20)
+    at TLSSocket.emit (events.js:211:7)
+    at _handle.close (net.js:567:12)
+    at TCP.done [as _onclose] (_tls_wrap.js:356:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-04-01T16:32:09.072Z] ----------------------------------------------------------------------
+[debug] [2018-04-01T16:32:09.077Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2018-04-01T16:32:09.077Z] CLI Version:   3.17.7
+[debug] [2018-04-01T16:32:09.077Z] Platform:      linux
+[debug] [2018-04-01T16:32:09.077Z] Node Version:  v8.10.0
+[debug] [2018-04-01T16:32:09.077Z] Time:          Sun Apr 01 2018 13:32:09 GMT-0300 (-03)
+[debug] [2018-04-01T16:32:09.077Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-04-01T16:32:09.118Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-01T16:32:09.119Z] > authorizing via signed-in user
+[debug] [2018-04-01T16:32:09.122Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-04-01T16:32:09.123Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/vmTel0T9k6_9GwJIiH89E0A_ocPGT2Cd1KRqflEemM8',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Apr 01 2018 13:32:09 GMT-0300 (-03)
+[debug] [2018-04-01T16:32:14.674Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-01T16:32:14.725Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/note-app-5896a  
+  
+ Sun Apr 01 2018 13:32:14 GMT-0300 (-03)
+[debug] [2018-04-01T16:32:16.430Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-01T16:32:16.432Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/note-app-5896a/tokens  
+  
+ Sun Apr 01 2018 13:32:16 GMT-0300 (-03)
+[debug] [2018-04-01T16:32:17.355Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-01T16:32:17.358Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/note-app-5896a  
+  
+ Sun Apr 01 2018 13:32:17 GMT-0300 (-03)
+[debug] [2018-04-01T16:32:18.462Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/valeria/Área de Trabalho/Polymer/note-app-codelabs'...
+[info] 
+[debug] [2018-04-01T16:32:18.467Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1058979701174/clients/_:getWebAppConfig  
+  
+ Sun Apr 01 2018 13:32:18 GMT-0300 (-03)
+[debug] [2018-04-01T16:32:19.982Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5000 is not available. Trying another port...
+[debug] [2018-04-01T16:32:20.135Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1058979701174/clients/_:getWebAppConfig  
+  
+ Sun Apr 01 2018 13:32:20 GMT-0300 (-03)
+[debug] [2018-04-01T16:32:21.597Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5004
+

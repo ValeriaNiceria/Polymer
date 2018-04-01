@@ -39,3 +39,35 @@
 [info] i  hosting: Serving hosting files from: public
 [info] ✔  hosting: Local server: http://localhost:5000
 
+[debug] [2018-04-01T16:05:34.035Z] ----------------------------------------------------------------------
+[debug] [2018-04-01T16:05:34.053Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2018-04-01T16:05:34.053Z] CLI Version:   3.17.7
+[debug] [2018-04-01T16:05:34.053Z] Platform:      linux
+[debug] [2018-04-01T16:05:34.053Z] Node Version:  v8.10.0
+[debug] [2018-04-01T16:05:34.053Z] Time:          Sun Apr 01 2018 13:05:34 GMT-0300 (-03)
+[debug] [2018-04-01T16:05:34.054Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-04-01T16:05:34.124Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-01T16:05:34.125Z] > authorizing via signed-in user
+[debug] [2018-04-01T16:05:34.132Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/note-app-5896a  
+  
+ Sun Apr 01 2018 13:05:34 GMT-0300 (-03)
+[debug] [2018-04-01T16:05:40.515Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-01T16:05:40.517Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/note-app-5896a/tokens  
+  
+ Sun Apr 01 2018 13:05:40 GMT-0300 (-03)
+[debug] [2018-04-01T16:05:41.517Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-01T16:05:41.518Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/note-app-5896a  
+  
+ Sun Apr 01 2018 13:05:41 GMT-0300 (-03)
+[debug] [2018-04-01T16:05:42.557Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/valeria/Área de Trabalho/Polymer/note-app-codelabs'...
+[info] 
+[debug] [2018-04-01T16:05:42.563Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1058979701174/clients/_:getWebAppConfig  
+  
+ Sun Apr 01 2018 13:05:42 GMT-0300 (-03)
+[debug] [2018-04-01T16:05:43.330Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+

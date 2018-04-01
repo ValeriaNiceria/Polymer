@@ -1,0 +1,42 @@
+{
+	/* Configuração básica */
+	"name": "Notes",
+	"scope": "./",
+	"start_url": "index.html",
+	"display": "standalone",
+	"orientation": "any",
+	"theme_color": "#9C27B0",
+	"background_color": "#9C27B0",
+	/* Configuração do ícone */
+	"icons": [{
+		"src": "bower_components/note-app/common/images/icon-0-75x.png",
+		"size": "36x36",
+		"type": "image/png"
+	},
+	{
+		"src": "bower_components/note-app/common/images/icon-1x.png",
+		"size": "48x48",
+		"type": "image/png"
+	},
+	{
+		"src": "bower_components/note-app/common/images/icon-1-5x.png",
+		"size": "72x72",
+		"type": "image/png"
+	},
+	{
+		"src": "bower_components/note-app/common/images/icon-2x.png",
+		"size": "96x96",
+		"type": "image/png"
+	},
+	{
+		"src": "bower_components/note-app/common/images/icon-3x.png",
+		"size": "144x144",
+		"type": "image/png"
+	},
+	{
+		"src": "bower_components/note-app/common/images/icon-4x.png",
+		"size": "192x192",
+		"type": "image/png"
+	}
+	]
+}
