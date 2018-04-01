@@ -1,0 +1,41 @@
+[debug] [2018-04-01T15:42:06.282Z] ----------------------------------------------------------------------
+[debug] [2018-04-01T15:42:06.292Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2018-04-01T15:42:06.293Z] CLI Version:   3.17.7
+[debug] [2018-04-01T15:42:06.293Z] Platform:      linux
+[debug] [2018-04-01T15:42:06.293Z] Node Version:  v8.10.0
+[debug] [2018-04-01T15:42:06.293Z] Time:          Sun Apr 01 2018 12:42:06 GMT-0300 (-03)
+[debug] [2018-04-01T15:42:06.293Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-04-01T15:42:06.313Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-01T15:42:06.313Z] > authorizing via signed-in user
+[debug] [2018-04-01T15:42:06.316Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-04-01T15:42:06.316Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/vmTel0T9k6_9GwJIiH89E0A_ocPGT2Cd1KRqflEemM8',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Apr 01 2018 12:42:06 GMT-0300 (-03)
+[debug] [2018-04-01T15:42:06.880Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-01T15:42:06.973Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/note-app-5896a  
+  
+ Sun Apr 01 2018 12:42:06 GMT-0300 (-03)
+[debug] [2018-04-01T15:42:08.013Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-01T15:42:08.014Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/note-app-5896a/tokens  
+  
+ Sun Apr 01 2018 12:42:08 GMT-0300 (-03)
+[debug] [2018-04-01T15:42:09.249Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-01T15:42:09.251Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/note-app-5896a  
+  
+ Sun Apr 01 2018 12:42:09 GMT-0300 (-03)
+[debug] [2018-04-01T15:42:10.367Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/valeria/Área de Trabalho/Polymer/note-app-codelabs'...
+[info] 
+[debug] [2018-04-01T15:42:10.373Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1058979701174/clients/_:getWebAppConfig  
+  
+ Sun Apr 01 2018 12:42:10 GMT-0300 (-03)
+[debug] [2018-04-01T15:42:16.265Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+
