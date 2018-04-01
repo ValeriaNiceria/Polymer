@@ -45,6 +45,14 @@
 			on-close="commitChange">
 		</na-editor>
 
+		<!-- Integrando um <firebase-document> -->
+		<firebase-document
+		    id="document"
+		    app-name="notes"
+		    path="[[editableNoteId]]"
+		    data="{{editableNote}}">
+		</firebase-document>
+
 	</template>
 
 	<script>
@@ -52,10 +60,22 @@
 			is: 'note-app',
 			/* Aplicando o NodeAppBehavior */
 			behaviors: [Polymer.NoteAppBehavior],
+
 			/* Implementar o ouvinte de signIn */
 			signIn: function() {
 		      this.$.auth.signInWithPopup();
+		    },
+
+		    /* Caminho da raiz onde todas as notas serão armazenadas */
+		    get notesPath() {
+		    	return '/notes/' + this.user.uid;
 		    }
+
+		    /* Recebe o ID exclusivo de uma nota */
+		    toEditableId: function(noteId) {
+		    	return this.notesPath + '/' + noteId;
+		    }
+
 		});
 	</script>
 </dom-module>
