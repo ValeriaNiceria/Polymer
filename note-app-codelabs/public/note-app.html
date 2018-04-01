@@ -30,6 +30,21 @@
 		    user="{{user}}">
 		</firebase-auth>
 
+		<!-- Botão adicionar -->
+		<paper-fab
+			icon="add"
+			on-tap="create"
+			disabled="[[!online]]"
+			aria-label="Adicionar anotação">
+		</paper-fab>
+
+		<!-- Formulário de edição -->
+		<na-editor
+			id="editor"
+			note="{{editableNote}}"
+			on-close="commitChange">
+		</na-editor>
+
 	</template>
 
 	<script>
