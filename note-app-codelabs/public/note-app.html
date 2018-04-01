@@ -53,6 +53,34 @@
 		    data="{{editableNote}}">
 		</firebase-document>
 
+		<!-- Consultando com <firebase-query> -->
+		<firebase-query
+		    id="query"
+		    app-name="notes"
+		    path="/notes/[[user.uid]]"
+		    data="{{notes}}">
+		</firebase-query>
+
+		<!-- Dados persistentes do Firebase para acesso off-line -->
+		<app-indexeddb-mirror
+		    session="[[user.uid]]"
+		    key="notes"
+		    data="{{notes}}"
+		    persisted-data="{{persistedNotes}}">
+		</app-indexeddb-mirror>
+
+		<!-- Exibindo uma lista de notas -->
+		<div class="notes">
+		  <template is="dom-repeat" items="[[persistedNotes]]" as="note">
+		    <na-note
+		        id$="[[note.$key]]"
+		        title="[[note.title]]"
+		        body="[[note.body]]"
+		        on-tap="edit">
+		    </na-note>
+		  </template>
+		</div>
+
 	</template>
 
 	<script>
@@ -68,14 +96,18 @@
 
 		    /* Caminho da raiz onde todas as notas serão armazenadas */
 		    get notesPath() {
-		    	return '/notes/' + this.user.uid;
-		    }
+		      return '/notes/' + this.user.uid;
+		    },
 
 		    /* Recebe o ID exclusivo de uma nota */
 		    toEditableId: function(noteId) {
-		    	return this.notesPath + '/' + noteId;
-		    }
+		      return this.notesPath + '/' + noteId;
+		    },
 
+		    /* Desativando a edição quando off-line */
+		    get isEditable() {
+		      return this.online;
+		    }
 		});
 	</script>
 </dom-module>
