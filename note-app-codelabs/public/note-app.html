@@ -5,6 +5,13 @@
 
 <dom-module id="note-app">
 	<template>
+		<!-- Incorporar <firebase-auth> -->
+		<firebase-auth
+		    id="auth"
+		    app-name="notes"
+		    provider="google">
+		</firebase-auth>
+
 		<!-- Incluindo estilos compartilhados -->
 		<style include="note-app-shared-styles"></style>
 
@@ -13,6 +20,7 @@
 
 		<!-- Adicionando uma tela de login -->
 		<na-login></na-login>
+
 	</template>
 
 	<script>
