@@ -9,17 +9,26 @@
 		<firebase-auth
 		    id="auth"
 		    app-name="notes"
-		    provider="google">
+		    provider="google"
+		    signed-in="{{signedIn}}"
+    		user="{{user}}">
 		</firebase-auth>
 
 		<!-- Incluindo estilos compartilhados -->
 		<style include="note-app-shared-styles"></style>
 
 		<!-- Adicionando uma barra de ferramentas -->
-		<na-toolbar></na-toolbar>
+		<na-toolbar 
+			signed-in="[[signedIn]]"
+    		on-sign-out="signOut">
+    	</na-toolbar>
 
 		<!-- Adicionando uma tela de login -->
-		<na-login></na-login>
+		<na-login
+			on-sign-in="signIn"
+		    signed-in="[[signedIn]]"
+		    disabled="[[!online]]">
+		</na-login>
 
 	</template>
 
